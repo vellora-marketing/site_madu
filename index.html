@@ -50,8 +50,9 @@
   header{position:sticky;top:0;z-index:50;background:rgba(251,247,236,.88);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:.3s}
   header.rolou{border-color:var(--areia-2)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:86px}
-  .wordmark{font-family:inherit;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--cafe);font-size:15px;line-height:1.2;white-space:nowrap}
-  .wordmark small{color:var(--dourado);font-weight:600;font-size:.72em;letter-spacing:.32em;display:block}
+  .wordmark{font-family:var(--serif);font-weight:600;font-size:30px;line-height:1;letter-spacing:.01em;color:var(--cafe);white-space:nowrap;display:inline-flex;flex-direction:column;align-items:center}
+  .wordmark em{font-style:italic;font-weight:500;color:var(--terracota)}
+  .wordmark small{font-family:var(--sans);font-weight:500;font-size:9.5px;letter-spacing:.42em;text-transform:uppercase;color:var(--dourado);margin-top:6px;padding-left:.42em}
   .nav ul{display:flex;gap:34px;list-style:none;font-size:15px}
   .nav ul a{color:var(--texto);transition:.2s}
   .nav ul a:hover{color:var(--terracota)}
@@ -185,7 +186,7 @@
   /* FOOTER */
   footer{padding:70px 0 40px}
   .foot{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px}
-  .foot .wordmark{display:block;margin-bottom:20px;font-size:17px}
+  .foot .wordmark{margin-bottom:20px;font-size:32px;align-items:flex-start}.foot .wordmark small{padding-left:0}
   .foot p,.foot li{font-size:14px;color:var(--suave)}
   .foot h4{font-size:14px;color:var(--cafe);margin-bottom:16px;font-weight:600}
   .foot ul{list-style:none;display:grid;gap:10px}
@@ -221,7 +222,7 @@
   @media (max-width:760px){
     .wrap{width:calc(100% - 32px)}
     section{padding:72px 0}
-    .nav{height:72px}.wordmark{font-size:13px}
+    .nav{height:72px}.wordmark{font-size:25px}
     .nav ul{display:none;position:absolute;top:72px;left:0;right:0;background:var(--creme);flex-direction:column;gap:0;padding:8px 16px 20px;border-bottom:1px solid var(--areia-2)}
     .nav ul.aberto{display:flex}
     .nav ul a{display:block;padding:14px 0;border-bottom:1px solid var(--areia)}
@@ -262,7 +263,7 @@
 
 <header id="topo">
   <nav class="wrap nav">
-    <a href="#" class="logo" aria-label="Madu Alves Nutricionista"><span class="wordmark">Madu Alves<small>Nutricionista</small></span></a>
+    <a href="#" class="logo" aria-label="Madu Alves Nutricionista"><span class="wordmark">Madu <em>Alves</em><small>Nutricionista</small></span></a>
     <ul id="menu">
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#atendimento">Atendimento</a></li>
@@ -537,7 +538,7 @@
   <div class="wrap">
     <div class="foot">
       <div>
-        <span class="wordmark">Madu Alves<small>Nutricionista</small></span>
+        <span class="wordmark">Madu <em>Alves</em><small>Nutricionista</small></span>
         <p>Nutrição baseada em ciência para emagrecimento, hipertrofia, performance e saúde.</p>
         <div class="redes">
           <a href="https://www.instagram.com/madualvesnutri/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
