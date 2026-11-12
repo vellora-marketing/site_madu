@@ -76,22 +76,6 @@
   .selo svg{position:absolute;inset:0;animation:gira 22s linear infinite}
   @keyframes gira{to{transform:rotate(360deg)}}
 
-  .hero-side{display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:20px;margin-top:20px}
-  .card{border-radius:var(--raio);padding:26px}
-  .card-nota{background:var(--dourado);color:#fff}
-  .avatares{display:flex;align-items:center;gap:14px;margin-bottom:14px}
-  .avatares .fotos{display:flex}
-  .avatares .fotos span{width:40px;height:40px;border-radius:50%;border:2px solid var(--dourado);margin-left:-10px;background-size:cover;background-position:center}
-  .avatares .fotos span:first-child{margin-left:0}
-  .estrelas{color:#fff;letter-spacing:2px;font-size:15px}
-  .card-nota strong{display:block;font-size:14px;font-weight:600}
-  .card-nota p{font-size:14px;opacity:.95}
-  .card-foto{padding:0;overflow:hidden;min-height:200px;position:relative}
-  .card-foto img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
-  .card-foto span{position:absolute;left:16px;bottom:16px;background:rgba(251,247,236,.92);font-size:13px;padding:6px 13px;border-radius:999px}
-  .card-escuro{background:var(--cafe);color:var(--areia);display:grid;grid-template-columns:1fr 1fr;gap:16px}
-  .card-escuro b{font-family:var(--serif);font-weight:500;font-size:40px;color:#fff;display:block;line-height:1}
-  .card-escuro small{font-size:13px;opacity:.75;display:block;margin-top:8px;line-height:1.4}
 
   /* SOBRE + galeria */
   .sobre-top{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:56px}
@@ -208,8 +192,6 @@
 
   /* RESPONSIVO */
   @media (max-width:1024px){
-    .hero-side{grid-template-columns:1fr 1fr}
-    .card-foto{grid-column:1/-1;order:3;min-height:240px}
     .servicos{grid-template-columns:1fr 1fr}
     .numeros{grid-template-columns:1fr 1fr}
     .porque{grid-template-columns:1fr}
@@ -233,8 +215,6 @@
     .hero-main .foto::before{background:linear-gradient(0deg,#F1E6D3 0%,rgba(241,230,211,0) 28%)}
     .selo{left:auto;right:20px;top:416px;bottom:auto;transform:none;width:88px;height:88px}
     .chips{margin-top:8px}
-    .hero-side{grid-template-columns:1fr}
-    .card-foto{grid-column:auto;order:0;min-height:220px}
     .sobre-top{grid-template-columns:1fr;gap:24px}
     .galeria{padding:0 16px;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory}
     .galeria figure{flex:0 0 62%;height:340px!important;scroll-snap-align:center}
@@ -296,27 +276,6 @@
         <div class="foto"><img src="img/madu-hero.jpg" alt="Nutricionista Madu Alves de blazer branco"></div>
       </div>
 
-      <div class="wrap hero-side">
-        <div class="card card-nota rev">
-          <div class="avatares">
-            <div class="fotos">
-              <span style="background-image:url(img/madu-paciente.jpg)"></span>
-              <span style="background-image:url(img/madu-consultorio.jpg)"></span>
-              <span style="background-image:url(img/madu-hero.jpg)"></span>
-            </div>
-            <div><div class="estrelas">★★★★★</div><strong>Nota 5,0 no Google</strong></div>
-          </div>
-          <p>“Nutri nota 1000, recomendo de olhos fechados.” Avaliação de paciente</p>
-        </div>
-        <div class="card card-foto rev">
-          <img src="img/sala-espera.jpg" alt="Sala de espera do consultório, estilo Japandi">
-          <span>Consultório na Asa Norte</span>
-        </div>
-        <div class="card card-escuro rev">
-          <div><b>+10 mil</b><small>pessoas acompanham a Madu no Instagram</small></div>
-          <div><b>1x/sem</b><small>feedback e ajustes no seu plano</small></div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -390,7 +349,7 @@
   <!-- NÚMEROS -->
   <div class="wrap">
     <div class="numeros rev">
-      <div><b>5,0</b><small>de nota nas avaliações do Google</small></div>
+      <div><b>2</b><small>formas de atendimento: presencial e online</small></div>
       <div><b>+10 mil</b><small>seguidores acompanhando conteúdo de nutrição</small></div>
       <div><b>100%</b><small>dos planos montados de forma individual</small></div>
       <div><b>7 dias</b><small>entre cada feedback e ajuste do seu plano</small></div>
@@ -477,7 +436,7 @@
         <div class="depo-card">
           <div class="aspas">“</div>
           <blockquote>A Madu é uma pessoa iluminada e uma profissional incrível!</blockquote>
-          <div class="quem"><i>P</i><div><b>Paciente</b><small>Avaliação no Google</small></div></div>
+          <div class="quem"><i>P</i><div><b>Paciente</b><small>Depoimento</small></div></div>
         </div>
         <div class="depo-card foto">
           <img src="img/madu-paciente.jpg" alt="Madu com paciente">
@@ -486,12 +445,12 @@
         <div class="depo-card">
           <div class="aspas">“</div>
           <blockquote>Nutri nota 1000, recomendo de olhos fechados.</blockquote>
-          <div class="quem"><i>P</i><div><b>Paciente</b><small>Avaliação no Google</small></div></div>
+          <div class="quem"><i>P</i><div><b>Paciente</b><small>Depoimento</small></div></div>
         </div>
         <div class="depo-card">
           <div class="aspas">“</div>
           <blockquote>Excelente, com flexibilidade pra atendimentos presenciais e on-line.</blockquote>
-          <div class="quem"><i>P</i><div><b>Paciente</b><small>Avaliação no Google</small></div></div>
+          <div class="quem"><i>P</i><div><b>Paciente</b><small>Depoimento</small></div></div>
         </div>
       </div>
     </div>
