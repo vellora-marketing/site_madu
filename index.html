@@ -131,6 +131,8 @@
   /* CONSULTÓRIO */
   .consultorio{background:var(--areia);border-radius:var(--raio);padding:80px 56px}
   .salas{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:52px}
+  .sala-dupla{grid-column:span 2}
+  .sala-dupla .par{display:grid;grid-template-columns:1fr 1fr;gap:20px}
   .sala figure{border-radius:22px;overflow:hidden;aspect-ratio:3/4;background:var(--areia-2)}
   .sala img{width:100%;height:100%;object-fit:cover;transition:.6s}
   .sala:hover img{transform:scale(1.05)}
@@ -236,7 +238,7 @@
     .porque-foto{min-height:460px}
     .local{grid-template-columns:1fr;gap:32px}
     .consultorio{padding:56px 22px}
-    .salas{gap:14px}
+    .salas{gap:14px}.sala-dupla .par{gap:14px}
     .sala h3{font-size:15px}.sala p{font-size:13px}
     .depo-card{flex-basis:88%}
     .depo-card blockquote{font-size:23px}
@@ -418,10 +420,15 @@
           <p class="lead" style="margin-top:16px">Minha sala fica dentro do Coworking HOF, no Edifício Carlton Center. Nela, tudo foi pensado para você se sentir em casa: minimalismo, luz natural e aconchego.</p>
         </div>
         <div class="salas">
-          <div class="sala rev"><figure><img src="img/sala-espera.jpg" alt="Sala de espera"></figure><h3>Sala de espera</h3><p>Conforto desde a chegada</p></div>
-          <div class="sala rev"><figure><img src="img/sala-atendimento.jpg" alt="Sala de atendimento"></figure><h3>Sala de atendimento</h3><p>Privacidade e acolhimento</p></div>
+          <div class="sala sala-dupla rev">
+            <div class="par">
+              <figure><img src="img/sala-espera.jpg" alt="Sala de atendimento da Madu"></figure>
+              <figure><img src="img/sala-atendimento.jpg" alt="Sala de atendimento da Madu, vista do espelho"></figure>
+            </div>
+            <h3>Minha sala de atendimento</h3><p>Minimalismo, luz natural, privacidade e acolhimento</p>
+          </div>
           <div class="sala rev"><figure><img src="img/recepcao-mimos.jpg" alt="Recepção com mimos"></figure><h3>Recepção com mimos</h3><p>Um carinho em cada detalhe</p></div>
-          <div class="sala rev"><figure><img src="img/fachada.jpg" alt="Fachada do Edifício Carlton Center"></figure><h3>Carlton Center</h3><p>Fácil acesso na Asa Norte</p></div>
+          <div class="sala rev"><figure><img src="img/fachada.jpg" alt="Fachada do Edifício Carlton Center"></figure><h3>Edifício Carlton Center</h3><p>Onde fica o Coworking HOF</p></div>
         </div>
         <div class="endereco rev">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg>
